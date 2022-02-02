@@ -1,6 +1,6 @@
 const api = {
-  key: "afaf9f8d48cff6cafd32e23220bcfdbf",
-  base: "https://api.openweathermap.org/data/2.5/",
+  key: "17c3465c8f9f042a38c8d671af86dbc4",
+  base: "api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}",
 };
 
 const searchbox = document.querySelector(".search-box");
