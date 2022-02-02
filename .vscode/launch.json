@@ -2,6 +2,18 @@
     "version": "0.1.0",
     "configurations": [
         {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "name": "Launch Extension",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "pwa-extensionHost"
+        },
+        {
             "type": "devtools-for-chrome",
             "request": "launch",
             "name": "Launch Chrome DevTools",
@@ -14,4 +26,4 @@
             "url": "http://localhost:8000/"
         }
     ]
-  }
+}
