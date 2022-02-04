@@ -27,6 +27,9 @@ let weather = {
       speed
     );
     document.querySelector(".city").innerText = "Weather in " + name;
+    let now = new Date();
+    let date = document.querySelector(".date");
+    date.innerText = dateBuilder(now);
     document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
     document.querySelector(".description").innerText = description;
@@ -59,3 +62,36 @@ document
   });
 
 weather.fetchWeather("Saint Paul, MN");
+
+function dateBuilder(d) {
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let day = days[d.getDay()];
+  let date = d.getDate();
+  let month = months[d.getMonth()];
+  let year = d.getFullYear();
+
+  return `${day} ${date} ${month} ${year}`;
+}
