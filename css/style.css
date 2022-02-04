@@ -9,6 +9,7 @@ body {
   background-repeat: round;
   font-size: 120%;
   background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
