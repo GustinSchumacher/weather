@@ -20,6 +20,10 @@ body {
   margin: 1em;
 }
 
+.date {
+  margin-bottom: 5px;
+}
+
 .search {
   display: flex;
   align-items: center;
