@@ -8,6 +8,7 @@ body {
   background: #222;
   background-repeat: round;
   font-size: 120%;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
 }
 
 @media only screen and (max-width: 600px) {
@@ -88,7 +89,7 @@ h1.temp {
 
 .weather.loading:after {
   visibility: visible;
-  content: "Loading...";
+  content: "";
   color: white;
   position: absolute;
   top: 0;

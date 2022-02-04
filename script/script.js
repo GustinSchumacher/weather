@@ -61,7 +61,7 @@ document
     }
   });
 
-weather.fetchWeather("Saint Paul, MN");
+
 
 function dateBuilder(d) {
   let months = [
